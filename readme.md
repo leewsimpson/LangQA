@@ -8,6 +8,7 @@ python -m venv .venv
 * html2text
 * chromadb
 * tiktoken
+* youtube-transcript-api 
 
 ### Create .env
 * OPENAI_API_KEY="xxx"
