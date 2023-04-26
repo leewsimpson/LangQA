@@ -9,7 +9,7 @@ loader = ConfluenceLoader(
     api_key=os.environ["CONFLUENCE_PAT"]
 )
 
-documents = loader.load(space_key="ARC", include_attachments=False, limit=50, max_pages=5000)
+documents = loader.load(space_key="ARC", include_attachments=True, limit=50, max_pages=5000)
 
 print(f"{len(documents)} documents loaded")
 

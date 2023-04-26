@@ -3,7 +3,7 @@ from langchain.llms import OpenAI
 from langchain.embeddings.openai import OpenAIEmbeddings
 
 db = Chroma(persist_directory="data", embedding_function=OpenAIEmbeddings())
-llm = OpenAI()
+llm = OpenAI(temperature=0)
 from langchain.chains.question_answering import load_qa_chain
 
 while True:
