@@ -22,3 +22,9 @@ python -m venv .venv
 * CONFLUENCE_PAT="yyy"
 
 ## Note there is a bug with the confluence loader that incorrectly assigns the token to the wrong place.  In the constructor of the library - change it to use _token_ instead.
+
+## Interesting Links
+* List of LLMs - https://github.com/Hannibal046/Awesome-LLM
+* Langflow - https://github.com/logspace-ai/langflow
+* React paper - https://arxiv.org/abs/2210.03629
+* Microsoft Semantic Kernel - https://github.com/microsoft/semantic-kernel

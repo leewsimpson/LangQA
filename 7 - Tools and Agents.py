@@ -8,5 +8,6 @@ llm = OpenAI(temperature=0)
 tools = load_tools(["bing-search", "llm-math"], llm=llm)
 
 agent = initialize_agent(tools, llm, agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION, verbose=True)
+template = agent.agent.llm_chain.prompt.template
 
 print(agent.run("Who is Leo DiCaprio's girlfriend? What is her current age raised to the 0.43 power?"))
